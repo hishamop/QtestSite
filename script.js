@@ -51,3 +51,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		}
 	});
 });
+
+
+// Hamburger menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+    });
+});
+
