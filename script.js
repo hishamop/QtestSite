@@ -24,19 +24,17 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 	this.reset();
 });
 
-document.getElementById('trainingForm').addEventListener('submit', function(e) {
-	e.preventDefault();
-	alert('Thank you for booking training! We will contact you within 24 hours to confirm your enrollment.');
-	this.reset();
-	closeModal('trainingModal');
-});
+// document.getElementById('trainingForm').addEventListener('submit', function(e) {
+// 	alert('Thank you for booking training! We will contact you within 24 hours to confirm your enrollment.');
+// 	this.reset();
+// 	closeModal('trainingModal');
+// });
 
-document.getElementById('serviceForm').addEventListener('submit', function(e) {
-	e.preventDefault();
-	alert('Thank you for your service request! We will review your requirements and send you a detailed quote within 48 hours.');
-	this.reset();
-	closeModal('serviceModal');
-});
+// document.getElementById('serviceForm').addEventListener('submit', function(e) {
+// 	alert('Thank you for your service request! We will review your requirements and send you a detailed quote within 48 hours.');
+// 	this.reset();
+// 	closeModal('serviceModal');
+// });
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
