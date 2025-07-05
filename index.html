@@ -1,51 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Qtest Software Testing Training</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qtest Solutions - Software Testing Services, Training & Development</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Qtest</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#courses">Courses</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Qtest Software Solution LLP" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary" onclick="openModal('trainingModal')">Book Training</a>
+                <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Request Services</a>
+            </div>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <h2>Master Software Testing with Qtest</h2>
-    <p>Become job-ready with hands-on training in manual and automated testing.</p>
-    <a href="#contact" class="btn">Enroll Now</a>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Qtest Software Solution LLP</h1>
+            <p>Empowering startups with professional software testing services and training the next generation of quality assurance professionals</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Get Testing Services</a>
+                <a href="#" class="btn btn-secondary" onclick="openModal('trainingModal')">Explore Training</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h3>About Qtest</h3>
-    <p>Qtest is a premier training institute based in Calicut, Kerala. We offer practical and industry-focused training in software testing including manual testing, Selenium, API testing, and more.</p>
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Software Testing Services</h3>
+                    <p>Comprehensive testing solutions for startups - from manual testing to automated test suites, ensuring your software meets the highest quality standards.</p>
+                    <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Testing Training</h3>
+                    <p>Professional training programs for aspiring QA testers. Learn manual testing, automation tools, and industry best practices from experienced professionals.</p>
+                    <a href="#" class="btn btn-primary" onclick="openModal('trainingModal')">View Courses</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Software Development</h3>
+                    <p>Custom software development services with quality built-in from the ground up. We develop and test your applications for optimal performance.</p>
+                    <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="courses">
-    <h3>Our Courses</h3>
-    <ul>
-      <li>Manual Testing & Test Case Writing</li>
-      <li>Selenium with Java/Python</li>
-      <li>API Testing with Postman</li>
-      <li>Performance Testing Basics</li>
-      <li>ISTQB Certification Prep</li>
-    </ul>
-  </section>
+    <!-- Training Section -->
+    <section id="training" class="training">
+        <div class="container">
+            <h2 class="section-title">Training Programs</h2>
+            <div class="training-content">
+                <div class="training-info">
+                    <h2>Launch Your QA Career</h2>
+                    <p>Our comprehensive training programs are designed to take you from beginner to job-ready QA professional. With hands-on projects and industry-relevant curriculum.</p>
+                    <ul class="training-features">
+                        <li>Hands-on practical training</li>
+                        <li>Industry-experienced instructors</li>
+                        <li>Job placement assistance</li>
+                        <li>Flexible scheduling options</li>
+                        <li>Real-world project experience</li>
+                        <li>Certification upon completion</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="openModal('trainingModal')">Enroll Now</a>
+                </div>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <h4>Manual Testing Fundamentals</h4>
+                        <p>6 weeks • Beginner Level</p>
+                        <div class="course-price">₹15,000</div>
+                    </div>
+                    <div class="course-card">
+                        <h4>Automation Testing</h4>
+                        <p>8 weeks • Intermediate Level</p>
+                        <div class="course-price">₹25,000</div>
+                    </div>
+                    <div class="course-card">
+                        <h4>Performance Testing</h4>
+                        <p>4 weeks • Advanced Level</p>
+                        <div class="course-price">₹18,000</div>
+                    </div>
+                    <div class="course-card">
+                        <h4>Complete QA Bootcamp</h4>
+                        <p>12 weeks • All Levels</p>
+                        <div class="course-price">₹45,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h3>Contact Us</h3>
-    <p>📍 Emarald Mall, Calicut<br/>📞 +91-XXXXXXXXXX<br/>📧 contact@qtestsolutions.com</p>
-    <a class="btn" href="mailto:contact@qtestsolutions.com">Send Email</a>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Qtest Solutions?</h2>
+            <div class="about-content">
+                <div>
+                    <h3>Expert Team</h3>
+                    <p>Our team consists of seasoned professionals with years of experience in software testing, quality assurance, and training. We bring industry best practices and cutting-edge methodologies to every project.</p>
+                    <p>We understand the unique challenges faced by startups and the career aspirations of students, allowing us to provide tailored solutions that drive success.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Students Trained</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Job Placement Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Qtest Software Training</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div>
+                    <h3>Ready to Start?</h3>
+                    <p>Whether you're a startup looking for quality testing services or a student ready to launch your QA career, we're here to help you succeed.</p>
+                    <div style="margin-top: 2rem;">
+                        <p><strong>📧 Email:</strong> info@qtestsolutions.com</p>
+                        <p><strong>📞 Phone:</strong> +91 9876543210</p>
+                        <p><strong>📍 Address:</strong> Kozhikode, Kerala, India</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I'm interested in</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="testing-services">Testing Services</option>
+                                <option value="training">Training Programs</option>
+                                <option value="development">Software Development</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Qtest Software Solution LLP</h3>
+                    <p>Empowering startups with professional testing services and training the next generation of QA professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Software Testing</a></li>
+                        <li><a href="#services">Test Automation</a></li>
+                        <li><a href="#services">Software Development</a></li>
+                        <li><a href="#training">QA Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Training</h3>
+                    <ul>
+                        <li><a href="#training">Manual Testing</a></li>
+                        <li><a href="#training">Automation Testing</a></li>
+                        <li><a href="#training">Performance Testing</a></li>
+                        <li><a href="#training">QA Bootcamp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Kozhikode, Kerala, India</li>
+                        <li>info@qtestsolutions.com</li>
+                        <li>+91 9876543210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Qtest Software Solution LLP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Training Modal -->
+    <div id="trainingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('trainingModal')">&times;</span>
+            <h2>Book Training</h2>
+            <form id="trainingForm">
+                <div class="form-group">
+                    <label for="trainee-name">Name</label>
+                    <input type="text" id="trainee-name" name="trainee-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="trainee-email">Email</label>
+                    <input type="email" id="trainee-email" name="trainee-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="trainee-phone">Phone</label>
+                    <input type="tel" id="trainee-phone" name="trainee-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="manual-testing">Manual Testing Fundamentals - ₹15,000</option>
+                        <option value="automation-testing">Automation Testing - ₹25,000</option>
+                        <option value="performance-testing">Performance Testing - ₹18,000</option>
+                        <option value="qa-bootcamp">Complete QA Bootcamp - ₹45,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-schedule">Preferred Schedule</label>
+                    <select id="preferred-schedule" name="preferred-schedule" required>
+                        <option value="">Select schedule</option>
+                        <option value="weekdays">Weekdays (9 AM - 12 PM)</option>
+                        <option value="weekends">Weekends (10 AM - 4 PM)</option>
+                        <option value="evening">Evening (6 PM - 9 PM)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Training</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('serviceModal')">&times;</span>
+            <h2>Request Services</h2>
+            <form id="serviceForm">
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-name">Contact Name</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Phone</label>
+                    <input type="tel" id="contact-phone" name="contact-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service-type">Service Needed</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">Select a service</option>
+                        <option value="manual-testing">Manual Testing</option>
+                        <option value="automation-testing">Test Automation</option>
+                        <option value="performance-testing">Performance Testing</option>
+                        <option value="software-development">Software Development</option>
+                        <option value="qa-consulting">QA Consulting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="project-details">Project Details</label>
+                    <textarea id="project-details" name="project-details" placeholder="Tell us about your project, timeline, and requirements..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Request Quote</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName('modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target === modals[i]) {
+                    modals[i].style.display = 'none';
+                }
+            }
+        }
+
+        // Form submissions
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        document.getElementById('trainingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for booking training! We will contact you within 24 hours to confirm your enrollment.');
+            this.reset();
+            closeModal('trainingModal');
+        });
+
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your service request! We will review your requirements and send you a detailed quote within 48 hours.');
+            this.reset();
+            closeModal('serviceModal');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
