@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="mainHeader">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - QtestSolutions.com - Professional Software Testing Services</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <!-- Organization Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "QtestSolutions.com",
+      "url": "https://QtestSolutions.com",
+      "logo": "https://QtestSolutions.com/images/logo.jpg"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Qtest Software Solution LLP" class="logo-img">
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary" onclick="openModal('trainingModal')">Book Training</a>
+                <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Request Services</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4D6S5PQQ1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-E4D6S5PQQ1');
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Professional software testing and development services tailored for startups and enterprises</p>
+        </div>
+    </section>
+
+
+    <!-- Main Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Software Testing Services</h3>
+                    <p>Comprehensive testing solutions ensuring your software meets the highest quality standards.</p>
+                    <ul class="service-features">
+                        <li>Functional Testing</li>
+                        <li>Regression Testing</li>
+                        <li>Integration Testing</li>
+                        <li>Performance Testing</li>
+                        <li>Security Testing</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Get Quote</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>Test Automation</h3>
+                    <p>Build robust automated test suites to improve efficiency and coverage.</p>
+                    <ul class="service-features">
+                        <li>Selenium WebDriver</li>
+                        <li>API Testing</li>
+                        <li>Mobile Testing</li>
+                        <li>CI/CD Integration</li>
+                        <li>Test Framework Development</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Software Development</h3>
+                    <p>Custom software development with quality built-in from the ground up.</p>
+                    <ul class="service-features">
+                        <li>Web Applications</li>
+                        <li>Mobile Apps</li>
+                        <li>Desktop Software</li>
+                        <li>API Development</li>
+                        <li>Maintenance & Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="openModal('serviceModal')">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Our Testing Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Requirements Analysis</h3>
+                    <p>We thoroughly analyze your requirements and create a comprehensive test strategy.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Test Planning</h3>
+                    <p>Develop detailed test plans and scenarios based on your specific needs.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Test Execution</h3>
+                    <p>Execute tests meticulously, documenting all findings and issues.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Reporting & Review</h3>
+                    <p>Provide detailed reports and recommendations for improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Request Our Services</h2>
+            <div class="contact-content">
+                <div>
+                    <h3>Let's Discuss Your Project</h3>
+                    <p>Looking for professional testing services? We're here to help ensure your software meets the highest quality standards.</p>
+                    <div style="margin-top: 2rem;">
+                        <p><strong>📧 Email:</strong> info@qtestsolutions.com</p>
+                        <p><strong>📞 Phone:</strong> +91 9876543210</p>
+                        <p><strong>📍 Address:</strong> Kozhikode, Kerala, India</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get a Quote</h3>
+                    <form action="https://formsubmit.co/info@qtestsolutions.com" method="POST" id="serviceForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="software-testing">Software Testing</option>
+                                <option value="test-automation">Test Automation</option>
+                                <option value="software-development">Software Development</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Qtest Software Solution LLP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include the script file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
